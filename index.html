@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Conqurer Tech Solutions | Portfolio & Business Card</title>
+    <title>Conquerer Tech Solutions | Portfolio & Business Card</title>
     <meta name="description" content="Conqurer Tech Solutions - Professional web development, mobile apps, and IT consulting services. View our portfolio and contact us today.">
     <meta name="keywords" content="web development, mobile apps, IT consulting, tech solutions, Kenya, Genz Chama">
     <meta name="author" content="Calvin Okeyo">
@@ -23,10 +23,8 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
-            padding-bottom: 0;
         }
 
-        /* Navigation */
         .navbar {
             max-width: 1200px;
             margin: 0 auto 20px;
@@ -78,7 +76,6 @@
             animation: fadeIn 0.5s ease-out;
         }
 
-        /* Portfolio Section (expanded width) */
         .portfolio-section {
             max-width: 1200px;
             margin: 20px auto;
@@ -160,10 +157,9 @@
             text-align: center;
         }
 
-        /* Portfolio Grid */
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 24px;
             margin-bottom: 32px;
         }
@@ -173,7 +169,6 @@
             border-radius: 16px;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
         }
 
         .portfolio-item:hover {
@@ -183,24 +178,17 @@
 
         .portfolio-image {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 200px;
+            height: 220px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 64px;
-            color: white;
-            position: relative;
+            overflow: hidden;
         }
 
-        .screenshot-badge {
-            position: absolute;
-            bottom: 10px;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            font-size: 11px;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: normal;
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .portfolio-info {
@@ -260,7 +248,6 @@
             gap: 12px;
         }
 
-        /* Contact Grid */
         .contact-grid {
             display: flex;
             flex-direction: column;
@@ -411,11 +398,6 @@
             justify-content: center;
         }
 
-        .qr-note {
-            font-size: 12px;
-            color: #666;
-        }
-
         .footer {
             background: #f8f9fa;
             padding: 16px 24px;
@@ -424,7 +406,6 @@
             color: #666;
         }
 
-        /* NEW: Global footer for designer credit */
         .global-footer {
             text-align: center;
             padding: 20px;
@@ -433,17 +414,6 @@
             font-size: 14px;
             font-weight: 500;
             text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-            letter-spacing: 0.5px;
-        }
-
-        .global-footer a {
-            color: white;
-            text-decoration: none;
-            border-bottom: 1px dotted rgba(255,255,255,0.5);
-        }
-
-        .global-footer a:hover {
-            border-bottom: 1px solid white;
         }
 
         @media (max-width: 768px) {
@@ -486,9 +456,8 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <div class="navbar">
-        <div class="logo">🚀 Conqurer Tech</div>
+        <div class="logo">🚀 Conquerer Tech</div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#portfolio">Portfolio</a>
@@ -497,21 +466,16 @@
         </div>
     </div>
 
-    <!-- Main Business Card -->
     <div class="card" id="home">
         <div class="header">
-            <div class="logo-emoji">
-                🚀
-            </div>
+            <div class="logo-emoji">🚀</div>
             <div class="business-name">Conquerer Tech Solutions</div>
             <div class="owner-name">Calvin Okeyo</div>
             <div class="tagline">"Technology That Conquers Challenges"</div>
         </div>
 
         <div class="content" id="contact">
-            <div class="section-title">
-                📞 Contact Information
-            </div>
+            <div class="section-title">📞 Contact Information</div>
             <div class="contact-grid">
                 <a href="tel:+254769618871" class="contact-item">
                     <div class="contact-icon">📱</div>
@@ -520,7 +484,6 @@
                         <div class="contact-value">0769618871</div>
                     </div>
                 </a>
-                
                 <a href="mailto:ocalvin004@gmail.com" class="contact-item">
                     <div class="contact-icon">✉️</div>
                     <div class="contact-info">
@@ -528,7 +491,6 @@
                         <div class="contact-value">ocalvin004@gmail.com</div>
                     </div>
                 </a>
-                
                 <a href="https://calvinonyango.github.io/Final-QR-code/" target="_blank" class="contact-item">
                     <div class="contact-icon">🌐</div>
                     <div class="contact-info">
@@ -539,34 +501,14 @@
             </div>
 
             <div id="services"></div>
-            <div class="section-title" style="margin-top: 8px;">
-                💼 Our Services
-            </div>
+            <div class="section-title" style="margin-top: 8px;">💼 Our Services</div>
             <div class="services-grid">
-                <div class="service-item">
-                    <span class="service-icon">💻</span>
-                    Web Development
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">📱</span>
-                    Mobile Apps
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🎨</span>
-                    UI/UX Design
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🔧</span>
-                    IT Consulting
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">📊</span>
-                    Digital Marketing
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">☁️</span>
-                    Cloud Solutions
-                </div>
+                <div class="service-item"><span class="service-icon">💻</span>Web Development</div>
+                <div class="service-item"><span class="service-icon">📱</span>Mobile Apps</div>
+                <div class="service-item"><span class="service-icon">🎨</span>UI/UX Design</div>
+                <div class="service-item"><span class="service-icon">🔧</span>IT Consulting</div>
+                <div class="service-item"><span class="service-icon">📊</span>Digital Marketing</div>
+                <div class="service-item"><span class="service-icon">☁️</span>Cloud Solutions</div>
             </div>
 
             <div class="description">
@@ -577,12 +519,8 @@
             </div>
 
             <div class="action-buttons">
-                <button class="btn btn-primary" onclick="saveContact()">
-                    📇 Save Contact
-                </button>
-                <button class="btn btn-secondary" onclick="copyAllInfo()">
-                    📋 Copy All Info
-                </button>
+                <button class="btn btn-primary" onclick="saveContact()">📇 Save Contact</button>
+                <button class="btn btn-secondary" onclick="copyAllInfo()">📋 Copy All Info</button>
             </div>
 
             <div class="qr-section">
@@ -596,116 +534,141 @@
         </div>
     </div>
 
-    <!-- Portfolio Section -->
     <div class="portfolio-section" id="portfolio">
-        <div class="section-title">
-            🏆 Our Recent Projects
-        </div>
-        <div class="section-subtitle">
-            Here are some of the amazing solutions we've delivered for our clients
-        </div>
+        <div class="section-title">🏆 Our Recent Projects</div>
+        <div class="section-subtitle">Here are some of the amazing solutions we've delivered for our clients</div>
 
         <div class="portfolio-grid">
-            <!-- PROJECT 1: GENZ CHAMA - YOUR LIVE APP -->
+            <!-- PROJECT 1: Genz Chama - Member Login -->
             <div class="portfolio-item">
                 <div class="portfolio-image">
-                    💰
-                    <span class="screenshot-badge">📸 Screenshot Coming</span>
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130420.png" alt="Genz Chama Member Login">
                 </div>
                 <div class="portfolio-info">
                     <div class="portfolio-category">FinTech Web App</div>
-                    <div class="portfolio-title">Genz Chama</div>
+                    <div class="portfolio-title">Genz Chama - Member Access</div>
                     <div class="portfolio-description">
-                        Complete savings group management system with M-Pesa integration, loan tracking, savings disbursement, 
-                        weekly contributions (MGR), member management, and real-time analytics. Includes member passcodes, 
-                        admin controls, CSV sync, and automated WhatsApp notifications.
+                        Secure member login and registration system for savings group management. New members can sign up with a 100 KES registration fee.
                     </div>
                     <div class="portfolio-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">LocalStorage</span>
-                        <span class="tech-tag">M-Pesa API</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">CSV Import</span>
+                        <span class="tech-tag">Authentication</span>
+                        <span class="tech-tag">M-Pesa</span>
+                        <span class="tech-tag">User Management</span>
                     </div>
                     <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">Launch App →</a>
                 </div>
             </div>
 
-            <!-- PROJECT 2: Placeholder -->
+            <!-- PROJECT 2: Genz Chama - Dashboard -->
             <div class="portfolio-item">
-                <div class="portfolio-image" style="flex-direction: column; gap: 10px;">
-                    <span style="font-size: 40px;">🖼️</span>
-                    <span style="font-size: 12px; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px;">Screenshot Soon</span>
+                <div class="portfolio-image">
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130545.png" alt="Genz Chama Dashboard">
                 </div>
                 <div class="portfolio-info">
-                    <div class="portfolio-category">E-Commerce Platform</div>
-                    <div class="portfolio-title">SmartShop Kenya</div>
+                    <div class="portfolio-category">Dashboard & Analytics</div>
+                    <div class="portfolio-title">Personal Dashboard</div>
                     <div class="portfolio-description">
-                        A fully functional online store with payment integration, inventory management, and real-time order tracking.
+                        Member dashboard showing savings overview, CSV data sync functionality for savings and loans tracking.
                     </div>
                     <div class="portfolio-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">M-Pesa</span>
+                        <span class="tech-tag">CSV Import</span>
+                        <span class="tech-tag">Data Sync</span>
+                        <span class="tech-tag">Real-time Updates</span>
                     </div>
-                    <a href="#" class="portfolio-link" onclick="showDemoMessage()">Preview →</a>
+                    <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">View Dashboard →</a>
                 </div>
             </div>
 
-            <!-- PROJECT 3: Placeholder -->
+            <!-- PROJECT 3: Genz Chama - MGR & Loans -->
             <div class="portfolio-item">
-                <div class="portfolio-image" style="flex-direction: column; gap: 10px;">
-                    <span style="font-size: 40px;">🖼️</span>
-                    <span style="font-size: 12px; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px;">Screenshot Soon</span>
+                <div class="portfolio-image">
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130635.png" alt="Weekly MGR and Loans">
                 </div>
                 <div class="portfolio-info">
-                    <div class="portfolio-category">Mobile Application</div>
-                    <div class="portfolio-title">HealthTrack App</div>
+                    <div class="portfolio-category">Savings & Loans</div>
+                    <div class="portfolio-title">Weekly MGR & Loan Management</div>
                     <div class="portfolio-description">
-                        A healthcare app that allows patients to book appointments, access medical records, and consult doctors online.
+                        Weekly Merry-Go-Round (MGR) winner tracking, current savings display (400 KES), and loan request system with eligibility checking (requires 50% savings).
                     </div>
                     <div class="portfolio-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Loan Calculator</span>
+                        <span class="tech-tag">MGR System</span>
+                        <span class="tech-tag">Eligibility Check</span>
                     </div>
-                    <a href="#" class="portfolio-link" onclick="showDemoMessage()">Preview →</a>
+                    <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">View Features →</a>
                 </div>
             </div>
 
-            <!-- PROJECT 4: Placeholder -->
+            <!-- PROJECT 4: Genz Chama - Savings History -->
             <div class="portfolio-item">
-                <div class="portfolio-image" style="flex-direction: column; gap: 10px;">
-                    <span style="font-size: 40px;">🖼️</span>
-                    <span style="font-size: 12px; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px;">Screenshot Soon</span>
+                <div class="portfolio-image">
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130735.png" alt="Savings History">
                 </div>
                 <div class="portfolio-info">
-                    <div class="portfolio-category">Business Management</div>
-                    <div class="portfolio-title">SmartPOS System</div>
+                    <div class="portfolio-category">Transaction History</div>
+                    <div class="portfolio-title">Savings History & Disbursement</div>
                     <div class="portfolio-description">
-                        A complete Point of Sale system with inventory tracking, sales analytics, and multi-branch support.
+                        Complete savings history table with date, amount, and status. Next disbursement date (July 2026) and CSV report generation for members.
                     </div>
                     <div class="portfolio-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">CSV Export</span>
+                        <span class="tech-tag">Payment Tracking</span>
+                        <span class="tech-tag">Disbursement Schedule</span>
                     </div>
-                    <a href="#" class="portfolio-link" onclick="showDemoMessage()">Preview →</a>
+                    <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">View History →</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: Genz Chama - M-Pesa Payment -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130828.png" alt="M-Pesa Payment">
+                </div>
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Payment Integration</div>
+                    <div class="portfolio-title">M-Pesa Savings Addition</div>
+                    <div class="portfolio-description">
+                        Secure payment interface for adding savings via M-Pesa (Till Number: 6246156), with payment proof submission and transaction verification.
+                    </div>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">M-Pesa API</span>
+                        <span class="tech-tag">Payment Verification</span>
+                        <span class="tech-tag">Transaction History</span>
+                    </div>
+                    <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">Make Payment →</a>
+                </div>
+            </div>
+
+            <!-- PROJECT 6: Genz Chama - Additional Feature -->
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://calvinonyango.github.io/Final-QR-code/images/Screenshot%202026-05-16%20130909.png" alt="Additional Features">
+                </div>
+                <div class="portfolio-info">
+                    <div class="portfolio-category">Admin Features</div>
+                    <div class="portfolio-title">Admin Control Panel</div>
+                    <div class="portfolio-description">
+                        Complete admin dashboard with member management, loan approval, savings disbursement control, and system-wide analytics.
+                    </div>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Admin Dashboard</span>
+                        <span class="tech-tag">Approval System</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                    <a href="https://calvinonyango.github.io/Final-Genz-app/" target="_blank" class="portfolio-link">Admin Demo →</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- NEW: Global Footer with Designer Credit -->
     <div class="global-footer">
         ✨ Designed by Conquerer Tech Solutions ✨
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <script>
-        // Generate QR code for current page
-        const currentUrl = window.location.href;
+        const currentUrl = "https://calvinonyango.github.io/Final-QR-code/";
+        
         new QRCode(document.getElementById("qrcode"), {
             text: currentUrl,
             width: 150,
@@ -751,12 +714,12 @@ END:VCARD`;
 Owner: Calvin Okeyo
 Phone: 0769618871
 Email: ocalvin004@gmail.com
-Website: https://calvinonyango.github.io
+Website: https://calvinonyango.github.io/Final-QR-code/
 
 Featured Project: Genz Chama - Savings group management app
 https://calvinonyango.github.io/Final-Genz-app/
 
-Services: Web Development, Mobile Apps, UI/UX Design, IT Consulting, Digital Marketing, Cloud Solutions, Networking & CCTV installations
+Services: Web Development, Mobile Apps, UI/UX Design, IT Consulting, Digital Marketing, Cloud Solutions
 
 About: We deliver innovative technology solutions that help businesses conquer their digital challenges.`;
             navigator.clipboard.writeText(businessInfo).then(() => {
@@ -764,10 +727,6 @@ About: We deliver innovative technology solutions that help businesses conquer t
             }).catch(() => {
                 showToast('❌ Failed to copy. Please try again.');
             });
-        }
-
-        function showDemoMessage() {
-            showToast('🔧 Project demo coming soon! Contact us for live examples.');
         }
     </script>
 </body>
